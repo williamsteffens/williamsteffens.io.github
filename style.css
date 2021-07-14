@@ -1,16 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: Roboto;
+    color: hsl(0, 0%, 100%);
+
+}
+
 html {
-    background-color: #01213C;
+    background-color: #0b2b45;
+}
+
+body {
+    color: white;
+}
+
+
+/* LOGO-----------------------------------------------------------------------*/
+
+.logo {
     color: hsla(360, 100%, 100%, 1);
+    letter-spacing: 1.22px;
+    font-size: 17px;
+
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+
+
+/* NAVBAR---------------------------------------------------------------------*/
+
+.nav {
+    color: hsla(360, 100%, 100%, 1);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.nav-link {
+    margin: 0px;
+    display: flex;
+}
+
+.nav-link li {
+    list-style: none;
+}
+
+.nav-link a {
+    padding: 1em;
+    text-decoration: none;
+    letter-spacing: 2px;
+
+}
+
+.nav-link a:hover {
+    color: hsl(34, 74%, 52%);
+
+}
+
+
+/* MOBILE NAVBAR */
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
 }
 
 
 
 
-/* -----SCROLLBAR----- */
+
+
+
+/* SCROLLBAR------------------------------------------------------------------*/
 
 /* width */
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 14px;
 }
 
 /* Track */
@@ -21,7 +100,7 @@ html {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #d4aa70;
+    background: hsl(34, 74%, 52%);
     border: 2.5px solid transparent;
     border-radius: 100px;
     background-clip: content-box;
@@ -29,10 +108,30 @@ html {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: hsl(0, 0%, 32%);
+    background: hsl(33, 90%, 57%);
+    border: 2.5px solid transparent;
+    border-radius: 100px;
+    background-clip: content-box;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:active {
-    background: hsl(0, 55%, 47%);
+    background: hsl(34, 68%, 46%);
+    border: 2.5px solid transparent;
+    border-radius: 100px;
+    background-clip: content-box;
+}
+
+/*
+::-webkit-scrollbar-track {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+*/
+
+
+
+::selection {
+background-color: hsl(34, 74%, 52%);
+color: #fff;
 }
