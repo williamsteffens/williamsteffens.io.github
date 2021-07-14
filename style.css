@@ -23,6 +23,7 @@ body {
     color: hsla(360, 100%, 100%, 1);
     letter-spacing: 1.22px;
     font-size: 17px;
+    margin-right: auto;
 
 }
 
@@ -37,9 +38,8 @@ body {
 .nav {
     color: hsla(360, 100%, 100%, 1);
     display: flex;
-    justify-content: space-between;
-    padding-left: 60px;
-    padding-right: 60px;
+    justify-content: flex-end;
+    padding: 20px 5%;
     align-items: center;
     min-height: 8vh;
 }
@@ -57,6 +57,7 @@ body {
     padding: 1em;
     text-decoration: none;
     letter-spacing: 2px;
+    transition: all 0.4s ease 0s;
 
 }
 
@@ -89,16 +90,18 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 14px;
+    width: 0px;
 }
 
-/* Track */
+
+
+/* Track
 ::-webkit-scrollbar-tracSk {
     background: rgb(80, 80, 80);
     border-radius: 100px;
 }
 
-/* Handle */
+/* Handle
 ::-webkit-scrollbar-thumb {
     background: hsl(34, 74%, 52%);
     border: 2.5px solid transparent;
@@ -106,7 +109,7 @@ body {
     background-clip: content-box;
 }
 
-/* Handle on hover */
+/* Handle on hover
 ::-webkit-scrollbar-thumb:hover {
     background: hsl(33, 90%, 57%);
     border: 2.5px solid transparent;
@@ -114,7 +117,7 @@ body {
     background-clip: content-box;
 }
 
-/* Handle on hover */
+/* Handle on hover
 ::-webkit-scrollbar-thumb:active {
     background: hsl(34, 68%, 46%);
     border: 2.5px solid transparent;
@@ -122,12 +125,15 @@ body {
     background-clip: content-box;
 }
 
-/*
+
 ::-webkit-scrollbar-track {
     margin-top: 7px;
     margin-bottom: 7px;
 }
+
 */
+
+
 
 
 
