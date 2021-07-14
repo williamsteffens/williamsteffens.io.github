@@ -1,19 +1,38 @@
+html {
+    background-color: #01213C;
+    color: hsla(360, 100%, 100%, 1);
+}
+
+
+
+
+/* -----SCROLLBAR----- */
+
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 15px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+    background: rgb(80, 80, 80);
+    border-radius: 100px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+    background: #d4aa70;
+    border: 2.5px solid transparent;
+    border-radius: 100px;
+    background-clip: content-box;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+    background: hsl(0, 0%, 32%);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:active {
+    background: hsl(0, 55%, 47%);
 }
