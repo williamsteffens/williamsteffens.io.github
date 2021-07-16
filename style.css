@@ -12,12 +12,18 @@ body {
 section {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
     justify-content: center;
     align-items: center;
     height: 100vh;
-
 }
+
+.collected {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 10px;
+}
+
 
 .reveal {
     position: relative;
@@ -54,19 +60,12 @@ section {
     animation-delay: 1.9s;
 }
 
-.subPos {
-    left: 33px;
-}
-
 @media screen and (max-width: 1024px) {
     .title {
         font-size: 2rem;
     }
     .subtitle {
-        font-size: 0.8rem;
-    }
-    .subPos {
-        left: 0px;
+        font-size: 0.9rem;
     }
 }
 
