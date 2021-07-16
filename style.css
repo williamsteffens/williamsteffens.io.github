@@ -6,4 +6,95 @@
 
 body {
     font-family: monospace;
+    background-color: #222;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.reveal {
+    position: relative;
+}
+.reveal::after{
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: hsl(34, 74%, 52%);
+    animation: reveal 1s ease-out 1s forwards;
+}
+.reveal.sub::after{
+    animation-delay: 1.4s;
+}
+
+.title {
+    color: #fff;
+    font-size: 90px;
+    opacity: 0;
+    animation: fade-in-text 0.01s linear 1.5s forwards;
+}
+
+.subtitle {
+    color: #fff;
+    font-size: 40px;
+    opacity: 0;
+    animation: fade-in-text 0.01s linear 1.5s forwards;
+    animation-delay: 1.9s;
+}
+
+.subPos {
+    left: 33px;
+}
+
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 2rem;
+    }
+    .subtitle {
+        font-size: 0.8rem;
+    }
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+@keyframes reveal {
+    0% {
+        width: 0%;
+        right: 100%;
+        left: 0%;
+    }
+    50% {
+        width: 100%;
+        right: 0%;
+        left: 0%;
+    }
+    100% {
+        width: 0%;
+        left: 100%;
+    }
+}
+
+@keyframes fade-in-text {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
