@@ -58,7 +58,6 @@ body {
 
 .subtitle {
     color: #fff;
-    padding-left: 10px;
     font-size: 40px;
     opacity: 0;
     animation: fade-in-text 0.01s linear 1.5s forwards;
@@ -66,7 +65,7 @@ body {
 }
 
 .subPos {
-    left: 30px;
+    left: 33px;
     top: 10px;
 }
 
@@ -132,14 +131,23 @@ nav {
     transition: all 0.4s ease 0s;
 
 }
-.menu a:hover {
-    color: var(--primary);
-
+.menu a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: var(--primary);
+    display: block;
+    margin: auto;
+    transition: 0.3s;
 }
-.menu a.is-active {
-    color: var(--primary);
+.menu a:hover::after {
+    width: 100%;
 }
 
+
+.menu a.is-active::after {
+    width: 100%;
+}
 
 
 
@@ -156,23 +164,24 @@ nav {
 .about-wrapper {
     position: relative;
     top: 8rem;
-    left: 16rem;
     width: 50%;
+    margin-left: 16%;
+    margin-right: 40%;
 }
 .about-wrapper h1 {
     font-size: 125px;
     text-transform: uppercase;
     opacity: 0.09;
-
     z-index: 0;
 }
 .about-wrapper p {
     font-size:20px;
 
     position: absolute;
-    top: 6rem;
+    top: 5.99rem;
     left: 9rem;
-    width: 50rem;
+    margin-right: auto;
+    min-width: 50vw;
     z-index: 1;
 
 }
