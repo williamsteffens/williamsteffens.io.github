@@ -65,6 +65,9 @@ section {
     .subtitle {
         font-size: 0.8rem;
     }
+    .subPos {
+        left: 0px;
+    }
 }
 
 .noselect {
