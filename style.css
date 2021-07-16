@@ -12,18 +12,11 @@ body {
 section {
     display: flex;
     flex-direction: column;
+    row-gap: 10px;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
-
-.collected {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    row-gap: 10px;
-}
-
 
 .reveal {
     position: relative;
