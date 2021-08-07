@@ -1,0 +1,142 @@
+:root {
+    --load-bar-height: 30px;
+    --load-bar-width: 300px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    background-color: #303030;
+    color: #F5F5F5
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+a {
+    color: #F5F5F5;
+    text-decoration: none;
+}
+
+.pageloader {
+    position: absolute;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    height: 100vh;
+    width: 100%;
+    opacity: 1;
+}
+
+.loadbar-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadbar {
+    position: relative;
+
+}
+
+.loadbar::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 100%;
+    width: 0%;
+    bottom: 0;
+    z-index: 50;
+    background-color: #303030;
+    animation: loadbar-swipe 1.5s cubic-bezier(1, 0, 0.59, 0.59) 0.5s forwards;
+}
+
+
+.loadbar-text {
+    color: #303030;
+    opacity: 0;
+    animation: text-fade-in 0.01s linear 1.6s forwards;
+}
+
+
+.header {
+    position: relative;
+    background-color: rgb(224, 65, 132);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 3rem 2rem 3rem;
+    z-index: 2;
+    /* opacity: 0; */
+}
+
+nav {
+    background-color: teal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+@keyframes loadbar-swipe {
+    0% {
+        left: 0;
+        width: 0;
+        right: 100%;
+    }
+    70% {
+        left: 0;
+        width: 100%;
+        right: 0;
+    }
+    100% {
+        left: 100%;
+        width: 0;
+        right: 0;
+    }
+}
+
+@keyframes text-fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slide {
+    0% {
+        left: -100%;
+    }
+    25% {
+        left: -100%;
+    }
+    75% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes slide-perm {
+    0% {
+        left: -100%;
+    }
+    25% {
+        left: -100%;
+    }
+    75% {
+        left: 0;
+    }
+    100% {
+        left: 0;
+    }
+}
