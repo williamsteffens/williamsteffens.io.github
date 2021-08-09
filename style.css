@@ -1,6 +1,7 @@
 :root {
     --load-bar-height: 30px;
     --load-bar-width: 300px;
+    --vh:;
 }
 
 * {
@@ -13,6 +14,7 @@
 body, html {
     background-color: #303030;
     color: #F5F5F5;
+    height: var(--vh);
 }
 
 h1 {
@@ -32,8 +34,8 @@ a {
     top: 0;
     background-color: white;
     z-index: 67;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     opacity: 1;
 }
 
