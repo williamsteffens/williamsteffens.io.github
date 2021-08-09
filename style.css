@@ -32,8 +32,8 @@ a {
     top: 0;
     background-color: white;
     z-index: 67;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     opacity: 1;
 }
 
