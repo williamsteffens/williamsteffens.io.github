@@ -12,7 +12,7 @@
 
 body, html {
     background-color: #303030;
-    color: #F5F5F5
+    color: #F5F5F5;
 }
 
 h1 {
@@ -24,18 +24,22 @@ a {
     text-decoration: none;
 }
 
+
+
+
 .pageloader {
     position: absolute;
     top: 0;
     background-color: white;
-    z-index: 100;
-    height: 100%;
-    width: 100%;
+    z-index: 67;
+    height: 100vh;
+    width: 100vw;
     opacity: 1;
 }
 
 .loadbar-container {
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,7 +62,7 @@ a {
     bottom: 0;
     z-index: 50;
     background-color: #303030;
-    animation: loadbar-swipe 1.5s cubic-bezier(1, 0, 0.59, 0.59) 0.5s forwards ,loadbar-swipe 1.5s cubic-bezier(1, 0, 0.59, 0.59) 3.25s forwards;
+    animation: loadbar-swipe 1.5s cubic-bezier(1, 0, 0.59, 0.59) 0.5s forwards, loadbar-swipe 1.5s cubic-bezier(1, 0, 0.59, 0.59) 3.25s forwards;
 }
 
 .loadbar-text {
@@ -67,6 +71,12 @@ a {
     opacity: 0;
     animation: text-fade-in 2.8s linear 1.6s forwards;
 }
+
+
+
+
+
+
 
 
 .header {
